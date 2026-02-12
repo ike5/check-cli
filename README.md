@@ -32,7 +32,7 @@ pip install check-cli
 ### 🍺 Via Homebrew (macOS/Linux)
 
 ```bash
-brew tap yourusername/check-cli
+brew tap ike5/check-cli
 brew install check-cli
 ```
 
