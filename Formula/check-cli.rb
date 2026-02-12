@@ -11,7 +11,7 @@ class CheckCli < Formula
   include Language::Python::Virtualenv
 
   desc "Beautiful CLI tool to test internet speed, latency, jitter, and more"
-  homepage "https://github.com/yourusername/check-cli"
+  homepage "https://github.com/ike5/check-cli"
   url "https://files.pythonhosted.org/packages/source/c/check-cli/check_cli-1.0.0.tar.gz"
   sha256 "UPDATE_THIS_WITH_ACTUAL_SHA256_AFTER_PUBLISHING_TO_PYPI"
   license "MIT"

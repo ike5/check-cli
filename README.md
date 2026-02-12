@@ -9,17 +9,15 @@ A beautiful, cross-platform CLI tool to test your internet speed, latency, jitte
 
 - ⬇️ **Download Speed** - Measure your download bandwidth
 - ⬆️ **Upload Speed** - Measure your upload bandwidth
-- ⏱️ **Latency** - Measure network latency (ping)
-- 📊 **Jitter** - Measure latency variation
-- 🌐 **Server Info** - See which Cloudflare server you're connected to
-- 📈 **History** - Track your results over time
-- 📊 **Statistics** - View averages, min/max across all tests
-- 🎨 **Beautiful Output** - Colorful, easy-to-read terminal output
-- 📊 **Progress Bars** - Real-time progress during tests
+- **Latency** - Measure network latency (ping)
+- **Jitter** - Measure latency variation
+- **Server Info** - See which Cloudflare server you're connected to
+- **History** - Track your results over time
+- **Statistics** - View averages, min/max across all tests
 
 ## Installation
 
-### 🐍 Via pip/pipx (Recommended - Works Everywhere)
+### Via pip/pipx
 
 **Works on:** macOS, Linux, Windows, Chromebook (Linux), WSL
 
@@ -41,7 +39,7 @@ brew install check-cli
 ### 📦 From Source
 
 ```bash
-git clone https://github.com/yourusername/check-cli.git
+git clone https://github.com/ike5/check-cli.git
 cd check-cli
 pip install -e .
 ```
@@ -88,6 +86,7 @@ check speed
 ```
 
 Output:
+
 ```
 ╭─────────────── Speed Test Results ───────────────╮
 │                                                   │
@@ -133,16 +132,16 @@ check ttfb
 
 ### What Each Metric Means
 
-| Metric | Description | Good Value |
-|--------|-------------|------------|
-| **Download** | How fast you receive data | >100 Mbps |
-| **Upload** | How fast you send data | >50 Mbps |
-| **Latency (idle)** | Response time when idle | <20 ms |
-| **Latency (loaded)** | Response time under load | <50 ms |
-| **Jitter** | Variation in latency | <5 ms |
-| **TTFB** | Time to first byte | <20 ms |
-| **DNS Lookup** | Domain resolution time | <20 ms |
-| **Quality Score** | Overall connection quality | >70/100 |
+| Metric               | Description                | Good Value |
+|----------------------|----------------------------|------------|
+| **Download**         | How fast you receive data  | >100 Mbps  |
+| **Upload**           | How fast you send data     | >50 Mbps   |
+| **Latency (idle)**   | Response time when idle    | <20 ms     |
+| **Latency (loaded)** | Response time under load   | <50 ms     |
+| **Jitter**           | Variation in latency       | <5 ms      |
+| **TTFB**             | Time to first byte         | <20 ms     |
+| **DNS Lookup**       | Domain resolution time     | <20 ms     |
+| **Quality Score**    | Overall connection quality | >70/100    |
 
 ### History & Statistics
 
@@ -178,8 +177,8 @@ check --version
 Chromebooks can run Linux apps via Crostini. Here's how to set up:
 
 1. **Enable Linux (Beta):**
-   - Go to Settings → Advanced → Developers → Linux development environment
-   - Click "Turn on" and follow the setup
+    - Go to Settings → Advanced → Developers → Linux development environment
+    - Click "Turn on" and follow the setup
 
 2. **Install Python and pipx:**
    ```bash
@@ -203,9 +202,7 @@ Chromebooks can run Linux apps via Crostini. Here's how to set up:
 
 Check CLI uses [Cloudflare's speed test infrastructure](https://speed.cloudflare.com), which is:
 
-- **Free** - No API key required
 - **Global** - Servers worldwide for accurate results
-- **Reliable** - Enterprise-grade infrastructure
 - **Private** - No data collection or accounts needed
 
 ## Data Storage
@@ -225,7 +222,7 @@ Test history is stored locally at:
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/check-cli.git
+git clone https://github.com/ike5/check-cli.git
 cd check-cli
 
 # Install development dependencies
